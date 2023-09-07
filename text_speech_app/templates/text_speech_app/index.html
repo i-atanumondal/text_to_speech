@@ -1,0 +1,24 @@
+{% load static %}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-speech Generator</title>
+    <link rel="stylesheet" href="{% static 'text_speech_app/style.css' %}">
+
+</head>
+
+<body>
+    <div class="box"> 
+        <h1>Text - Speech <span>Converter</span></h1>
+        <textarea placeholder="Write Anything Here..."></textarea>
+
+        <div class="row"> 
+            <select></select>
+            <button><img src="{% static 'images/play.png' %}" alt="Play">Listen</button>
+
+        </div>
+    </div>
+    <script src="{% static 'text_speech_app/script.js' %}"></script>
+
+</body>
+</html>
